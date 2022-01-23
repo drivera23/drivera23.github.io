@@ -5,6 +5,11 @@ img {
     height: auto;
 }
 
+div {
+  resize: both;
+  overflow: auto;
+}
+
 body { 
     min-height: 100vh; 
     width: 100%;
