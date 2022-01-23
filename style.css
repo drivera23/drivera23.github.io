@@ -1,10 +1,12 @@
 /* INTRO STYLE SHEET */
 
-.body{
-    background-size: cover;
-    background-repeat: no-repeat;
+html, body, {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
-
 
 * {
     box-sizing: border-box;
