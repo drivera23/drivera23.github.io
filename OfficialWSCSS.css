@@ -1,0 +1,122 @@
+/* INTRO STYLE SHEET */
+* {
+    box-sizing: border-box;
+}
+
+.container_intro{
+    width: 50%;
+    float: left;
+    background: hsl(0, 0%, 100%);
+    font-size: 18px;
+    /* padding: 25px;      */
+}
+
+.left{
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 300px;
+    width: 50%;
+}
+
+.right{
+    padding-top: 120px;
+    padding-left: 50px;
+    width: 50%
+}
+
+.intro:after{
+    content: "";
+    display: table;
+    clear: both;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* INTRO STYLE SHEET */
+
+/* EXPERIENCE STYLE SHEET */
+
+.experienceContainer{
+    width: 50%;
+    float: left;
+    background: hsl(0, 0%, 100%);
+    font-size: 18px;
+    /* padding: 25px;      */
+}
+
+.briefInt{
+    font-size: 18px;
+    width: 50%;
+    /* text-align: left; */
+    align-content: center;
+    /* justify-content: center; */
+    margin: auto;
+    font: "Roboto"
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; */
+}
+
+.leftExp{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 255px;
+    width: 45%;
+}
+
+.rightExp{
+    padding-top: 10px;
+    /* padding-left: 10px; */
+    width: 40%
+}
+
+
+
+/* EXPERIENCE STYLE SHEET */
+
+/* EDUCATION STYLE SHEET*/
+
+.educationContainer{
+    width: 50%;
+    float: left;
+    background: hsl(0, 0%, 100%);
+    font-size: 18px;
+    /* padding: 25px;      */
+}
+
+.leftEdImage{
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 300px;
+    width: 45%;
+}
+
+.leftEdText{
+    text-align: left;
+    /* padding-top: 10px; */
+    padding-left: 280px;
+    width: 55%;
+}
+
+.rightEdImage{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 40%
+}
+
+.rightEdText{
+    /* padding-top: 10px; */
+    padding-left: 10px;
+    width: 40%
+}
+
+.container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 40%
+  }
+
+/* EDUCATION STYLE SHEET*/
