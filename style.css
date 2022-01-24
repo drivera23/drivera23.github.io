@@ -1,27 +1,19 @@
 /* INTRO STYLE SHEET */
-/* 
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 div {
-/*   resize: horizontal; */
+  resize: horizontal;
   overflow: auto;
 }
 
-/* body { 
+body { 
     min-height: 100vh; 
     width: 100%;
-} */
-
-html, body, {
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-} */
+}
 
 * {
     box-sizing: border-box;
@@ -30,32 +22,24 @@ html, body, {
 .container_intro{
     width: 50%;
     float: left;
-/*     display: inline-block; */
-    margin: auto;
-    background: hsl(0,0%, 100%);
-    font-size: 18%;
+    background: hsl(0, 0%, 100%);
+    font-size: 18px;
 /*     font-size: 10vw; */
     /* padding: 25px;      */
 }
 
 .left{
-/*     text-align: left;
+    text-align: left;
     align-content: center;
     justify-content: center;
     padding-top: 20px;
     padding-left: 300px;
-    width: 50%; */
-    text-align: left;
-    align-content: center;
-    justify-content: center;
-    padding-top: 50%;
-    padding-left: 255%;
-    width: 45%;
+    width: 50%;
 }
 
 .right{
-    padding-top: 120%;
-    padding-left: 50%;
+    padding-top: 120px;
+    padding-left: 50px;
     width: 50%
 }
 
@@ -74,13 +58,13 @@ html, body, {
     width: 50%;
     float: left;
     background: hsl(0, 0%, 100%);
-    font-size: 18%;
+    font-size: 18px;
 /*     font-size: 10vw; */
     /* padding: 25px;      */
 }
 
 .briefInt{
-    font-size: 18%;
+    font-size: 18px;
 /*     font-size: 10vw; */
     width: 50%;
     /* text-align: left; */
@@ -95,8 +79,8 @@ html, body, {
     text-align: center;
     align-content: center;
     justify-content: center;
-    padding-top: 50%;
-    padding-left: 255%;
+    padding-top: 50px;
+    padding-left: 255px;
     width: 45%;
 }
 
@@ -116,7 +100,7 @@ html, body, {
     width: 50%;
     float: left;
     background: hsl(0, 0%, 100%);
-    font-size: 18%;
+    font-size: 18px;
 /*     font-size: 10vw; */
     /* padding: 25px;      */
 }
@@ -125,27 +109,27 @@ html, body, {
     text-align: left;
     align-content: center;
     justify-content: center;
-    padding-top: 100%;
-    padding-left: 300%;
+    padding-top: 100px;
+    padding-left: 300px;
     width: 45%;
 }
 
 .leftEdText{
     text-align: left;
     /* padding-top: 10px; */
-    padding-left: 280%;
+    padding-left: 280px;
     width: 55%;
 }
 
 .rightEdImage{
-    padding-top: 10%;
-    padding-left: 10%;
+    padding-top: 10px;
+    padding-left: 10px;
     width: 40%
 }
 
 .rightEdText{
     /* padding-top: 10px; */
-    padding-left: 10%;
+    padding-left: 10px;
     width: 40%
 }
 
