@@ -6,7 +6,7 @@ img {
 }
 
 div {
-  resize: both;
+  resize: horizontal;
   overflow: auto;
 }
 
