@@ -3,11 +3,13 @@
 .nav_id{
     background: hsl(0, 0%, 83%);
     list-style:none;
-    align-content: center;
-    padding-top: 2%;
-    left: 31%;
+    padding-top: 1%;
+    height: 8%;
+    width: 100%;
+    padding-left: 31%;
     position: fixed;
     font-size: 28px;
+    z-index: 1;
 }
 
 img {
@@ -19,8 +21,9 @@ img {
 .nav_id li{
     background: hsl(0, 0%, 83%);
     display:inline;
-    align-content: inherit;
-    text-align: center;
+    position: sticky;
+    /* align-content: inherit;
+    text-align: center; */
 }
 
 html, body{
@@ -29,6 +32,7 @@ html, body{
     height: 100%;
     /* min-width: 1000px; */
     min-width: 1600px;
+    z-index: 900;
 }
 
 * {
@@ -39,12 +43,15 @@ html, body{
     /* width: 100%; */
     float: left;
     font-size: 18px;
+    position:static;
     /* padding: 25px;      */
+    z-index: 900;
 }
 
 .left{
     
-    position: relative;
+    /* position: relative; */
+    position:inherit;
     text-align: left;
     align-content: center;
     justify-content: center;
@@ -54,18 +61,14 @@ html, body{
 }
 
 .right{
+    position:inherit;
     text-align: center;
     align-content: center;
     justify-content: center;
     padding-top: 8%;
     padding-left: 2%;
     width: 25%;
-    position: relative;
-    /* position: relative;
-    padding-top: 8%;
-    padding-left: 4%;
-    justify-content: center;
-    width: 30%; */
+    /* position: relative; */
 }
 
 .intro:after{
@@ -80,11 +83,8 @@ html, body{
 /* EXPERIENCE STYLE SHEET */
 
 .experienceContainer{
-    /* width: 100%; */
     float: left;
     font-size: 18px;
-/*     font-size: 10vw; */
-    /* padding: 25px;      */
 }
 
 .briefInt{
@@ -104,14 +104,14 @@ html, body{
     padding-top: 2%;
     padding-left: 23%;
     width: 47%;
-    position: relative;
+    position:inherit;
 }
 
 .rightExp{
     /* padding-left: 10px; */
     justify-content: center;
     padding-left: 2%;
-    position: relative;
+    position:inherit;
     width: 31%
 }
 
@@ -124,20 +124,17 @@ html, body{
     text-align: center;
     align-content: center;
     justify-content: center;
-    /* padding-top: 50px;
-    padding-left: 255px;
-    width: 45%; */
     padding-top: 2%;
     padding-left: 23%;
     width: 47%;
-    position: relative;
+    position:inherit;
 }
 
 .rightPro{
     /* padding-left: 10px; */
 
     padding-left: 2%;
-    position: relative;
+    position:inherit;
     width: 31%
 }
 
@@ -150,6 +147,7 @@ html, body{
     /* width: 100%; */
     float: left;
     font-size: 18px;
+    position: relative;
 }
 
 .leftEdImage{
@@ -159,6 +157,7 @@ html, body{
     padding-left: 29%;
     padding-top: 4%;
     width: 40%;
+    position:inherit;
     
 }
 
@@ -167,19 +166,22 @@ html, body{
     padding-top: 1%;
     padding-left: 25%;
     width: 50%;
+    position:inherit;
 }
 
 .rightEdImage{
     padding-top: 1%;
     padding-left: 5%;
-    width: 35%
+    width: 35%;
+    position:inherit;
 }
 
 .rightEdText{
     /* padding-top: 10px; */
     padding-top: 1%;
     padding-left: 5%;
-    width: 35%
+    width: 35%;
+    position:inherit;
 }
 
 
