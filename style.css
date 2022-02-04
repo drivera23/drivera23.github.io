@@ -1,15 +1,26 @@
 /* INTRO STYLE SHEET */
 
 .nav_id{
-    top: 35%;
+    background: hsl(0, 0%, 83%);
+    list-style:none;
+    align-content: center;
+    padding-top: 2%;
+    left: 31%;
     position: fixed;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 img {
     max-width: 100%;
     height: auto;
     position: relative;
+}
+
+.nav_id li{
+    background: hsl(0, 0%, 83%);
+    display:inline;
+    align-content: inherit;
+    text-align: center;
 }
 
 html, body{
