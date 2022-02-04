@@ -17,10 +17,26 @@
 
 <body>
 
+<!--Navigation-->
+    <nav>
+        <div class = "nav_id">
+            <ul> 
+                <li> <a href="#about"> About </a> </li>
+                <li> <a href="#internships"> Internships</a> </li>
+                <li> <a href="#projects"> Projects </a> </li>
+                <li> <a href="#education"> Education </a> </li>
+                <li> <a href="#contact"> Contact </a> </li>
+            </ul>
+        </div>
+    </nav>
+<!--Navigation-->
+
+
+
 <!-- Intro portion -->
     <div class = "intro" > 
         <div class="container_intro left">
-            <h1 style='text-align: center;'> Diego Rivera </h1>
+            <h1 id="about" style='text-align: center;'> Diego Luis Rivera Correa </h1>
             <p> I'm currently a third-year undergraduate student at the University of Puerto Rico at Mayagüez
                 studying Computer Science. I intend to specialize and develop in the world of Data Science and
                 Analytics, though I'm open to explore any field that Computer Science offers. I've been fortunate
@@ -34,7 +50,7 @@
         </div>
 
         <div class="container_intro right">
-            <img src="images/DLRCpic.png" width="250" height="300"/> 
+            <img src="images/DLRCpic.png" width="250" height="250" style="border:5px solid black"> 
         </div>
     </div>
 <!-- Intro portion -->
@@ -43,14 +59,12 @@
 
 <!-- Experience portion -->
     <div class = "intro" > 
-        <h1 style="text-align: center;"> Internships and Projects </h1>
+        <h1 id="internships" style="text-align: center;"> Internships </h1>
         <div class = "briefInt"> 
             <p style="align-content: center;"> Like I mentioned in the introduction of this page, I've been lucky enough to have
                 participated in many wonderful experiences, ranging from school projects to internships. Lets begin by
                 mentioning the professional experiences (click on the logos for their websites!).
             </p>
-
-            <h2>Internships: </h2>
         </div>
 
         <!-- Amazon -->
@@ -126,16 +140,39 @@
 
 <hr width = "60%">
 
-    <!--Project Section-->
-    <div class="intro">
-        <div class = "briefInt"> 
-            <h2>Projects: </h2>
-        </div>
+    <h1 id="projects" style="text-align: center;"> Projects </h1>
+    <div class = "briefInt"> 
+        <p style="align-content: center;"> Now lets mention the projects! (I'll add their GitHub link)
+        </p>
     </div>
+    <!--Project Section-->
 
-    <!-- Andeno -->
+    <!-- Image Processing -->
     <div class = "intro" > 
-        <!-- Andeno -->
+        <!-- Image Processing -->
+        <div class="experienceContainer leftPro"> 
+            <img src="images/coding_prep.png" width="200" height="150"/> 
+            <h3> Fall 2020 - Present </h3>
+        </div>
+
+        <div class="experienceContainer rightPro"> 
+            <h3 style="text-align: center;"> <i>Coding Interview Prep </i> </h3>
+            <ul style="list-style-type: '-   '">
+                <li> Solving and storing multiple programming practice problems designed for beginners. </li>
+                <li> Problem topics range from basic container structures, loops, and introduction to OOP. </li>
+                <li> Languages used for now: Python, Java, C++.  </li>
+                <li> For the code, click <a href="https://github.com/drivera23/Coding-Interview-Warmup-Prep">here</a>. </li>
+            </ul>
+        </div>
+        <!-- Image Processing -->
+    </div> 
+    <!-- Image Processing -->
+
+    <p style="text-align: center; font-size: 50px; padding-top: 10px;"> &#8226 &#8226 &#8226 </p>
+
+    <!-- Image Processing -->
+    <div class = "intro" > 
+        <!-- Image Processing -->
         <div class="experienceContainer leftPro"> 
             <img id="hoverImg">
             <h3> Fall 2021 </h3>
@@ -144,17 +181,15 @@
         <div class="experienceContainer rightPro"> 
             <h3 style="text-align: center;"> <i>COMP4046: Image Processing </i> </h3>
             <ul style="list-style-type: '-   '">
-                <li> During this class I was exposed to many wonderful tools that Python uses. </li>
-                <li> Performed matrix converstions  </li>
-                <li> Coded Python scripts for data labelling, cleaning, and extraction for predictive tendency 
-                    models for hundreds of users. </li>
-                <li> Used Python libraries: Pandas, Matplotlib, CSV, Numpy, Scipy.Stats, Seaborn, etc. </li>
+                <li> Developed a Python script that alters pictures by modifying their pixel matrices using Numpy. </li>
+                <li> Performed matrix converstions given a pixel value to enhance grayscale values. </li>
+                <li> Generated random RGBA and ARGB images.  </li>
+                <li> Hover over the image to see a cool result. For the code, click <a href="https://github.com/drivera23/JupyterLabs/blob/main/Image_Processing_MiniProyecto.ipynb">here</a>. </li>
             </ul>
         </div>
-        <!-- Andeno -->
+        <!-- Image Processing -->
     </div> 
-    <!-- Andeno -->
-
+    <!-- Image Processing -->
 
     <!--Project Section-->
 
@@ -166,7 +201,7 @@
 <!-- Education portion -->
 
 <div class = "intro" > 
-    <h1 style="text-align: center;"> Education </h1>
+    <h1 id="education" style="text-align: center;"> Education </h1>
     <!-- UPRM -->
     <div class="educationContainer leftEdImage"> 
         <a href="https://www.uprm.edu/portada/">
@@ -255,7 +290,7 @@
                         <li> Jupyter Notebooks, Colab </li>
                         <li> X-Code, VS Code, Eclipse </li>
                         <li> PostgreSQL </li>
-                        <li> Microsoft Word, Excel, PowerBI, PowerPoint </li>
+                        <li> Microsoft Office Suite </li>
                     </ul>
                 </li>
             </ul>
@@ -274,7 +309,7 @@
 
 <!-- Contact portion -->
 <div class = "intro" > 
-    <h1 style="text-align: center;"> Contact and More... </h1>
+    <h1 id = "contact" style="text-align: center;"> Contact and More... </h1>
     <div class = "briefInt"> 
         <p style="align-content: center;"> This small portfolio was a really nice thing to do.
         </p>
@@ -288,33 +323,6 @@
     </div>
 </div> 
 <!-- Contact portion -->
-
-<!-- <style type="text/css" media="screen">
-    #editor { 
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-</style>
-
-<div id="editor">function foo(items) {
-    var x = "All this is syntax highlighted";
-    return x;
-}</div>
-    
-<script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
-    editor.session.setMode("ace/mode/javascript");
-</script> -->
-
-
-
-
-
 </body>
 
 

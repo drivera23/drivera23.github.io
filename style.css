@@ -1,19 +1,10 @@
-/* INTRO STYLE SHEET
-/* 
-img {
-    max-width: 100%;
-    height: auto;
-}
+/* INTRO STYLE SHEET */
 
-div {
-/*   resize: horizontal; */
-  /* overflow: auto;
+.nav_id{
+    top: 35%;
+    position: fixed;
+    font-size: 24px;
 }
-
-body { 
-    min-height: 100vh; 
-    width: 100%;
-} */  
 
 img {
     max-width: 100%;
@@ -23,9 +14,10 @@ img {
 
 html, body{
     /* width: 100%; */
+    scroll-behavior: smooth;
     height: 100%;
     /* min-width: 1000px; */
-    min-width: 1200px;
+    min-width: 1600px;
 }
 
 * {
@@ -35,26 +27,34 @@ html, body{
 .container_intro{
     /* width: 100%; */
     float: left;
-    background: hsl(0, 0%, 100%);
     font-size: 18px;
     /* padding: 25px;      */
 }
 
 .left{
+    
     position: relative;
     text-align: left;
     align-content: center;
     justify-content: center;
     padding-top: 5%;
-    padding-left: 25%;
-    width: 50%;
+    padding-left: 26%;
+    width: 52%;
 }
 
 .right{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 8%;
+    padding-left: 2%;
+    width: 25%;
     position: relative;
-    padding-top: 10%;
-    padding-left: 5%;
-    width: 40%
+    /* position: relative;
+    padding-top: 8%;
+    padding-left: 4%;
+    justify-content: center;
+    width: 30%; */
 }
 
 .intro:after{
@@ -78,7 +78,7 @@ html, body{
 
 .briefInt{
     font-size: 18px;
-    width: 50%;
+    width: 45%;
     position: relative;
     align-content: center;
     /* justify-content: center; */
@@ -90,20 +90,18 @@ html, body{
     text-align: center;
     align-content: center;
     justify-content: center;
-    /* padding-top: 50px;
-    padding-left: 255px;
-    width: 45%; */
-    padding-top: 1%;
-    padding-left: 25%;
-    width: 40%;
+    padding-top: 2%;
+    padding-left: 23%;
+    width: 47%;
     position: relative;
 }
 
 .rightExp{
     /* padding-left: 10px; */
-    padding-left: 8%;
+    justify-content: center;
+    padding-left: 2%;
     position: relative;
-    width: 35%
+    width: 31%
 }
 
 
@@ -118,17 +116,18 @@ html, body{
     /* padding-top: 50px;
     padding-left: 255px;
     width: 45%; */
-    padding-top: 3%;
-    padding-left: 25%;
-    width: 40%;
+    padding-top: 2%;
+    padding-left: 23%;
+    width: 47%;
     position: relative;
 }
 
 .rightPro{
     /* padding-left: 10px; */
-    padding-left: 8%;
+
+    padding-left: 2%;
     position: relative;
-    width: 35%
+    width: 31%
 }
 
 
@@ -146,9 +145,9 @@ html, body{
     text-align: left;
     align-content: center;
     justify-content: center;
-    
-    padding-left: 25%;
-    width: 45%;
+    padding-left: 29%;
+    padding-top: 4%;
+    width: 40%;
     
 }
 
@@ -160,15 +159,15 @@ html, body{
 }
 
 .rightEdImage{
-    padding-top: 10px;
-    padding-left: 10px;
-    width: 40%
+    padding-top: 1%;
+    padding-left: 5%;
+    width: 35%
 }
 
 .rightEdText{
     /* padding-top: 10px; */
     padding-top: 1%;
-    /* padding-left:; */
+    padding-left: 5%;
     width: 35%
 }
 
