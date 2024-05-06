@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Picking a Graduate School</title>
+  <title>Estimating Pi Using Monte Carlo Simulations</title>
   
   <meta name="author" content="Diego Rivera Correa">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <center><h1><i>Estimating Pi Using Monte Carlo Simulations</i></h1></center>
               <p style="width:100%;vertical-align:middle">
-                XYZ
+                A really cool way to compute a reliable approximation of pi.
               </p> 
             </td>
           </tr>
@@ -27,7 +27,51 @@
           <tr>
             <td style="width:100%;vertical-align:middle">
                 <p>
-                    Im going to insert some code later haha.
+                    There are many situations in the world of computation where, if there is a lack of resources and context,
+                    finding an exact answer to problems is too difficult and costly. Imagine trying to compute the cardinality of some 
+                    arbitrary graph with over 2 billion nodes, computing that with a single computer locally will not suffice. But of course, 
+                    we still <i>need</i> an answer, so we need to get clever! The common approach is to <i>estimate</i> and <i>approximate</i>. 
+                    The good thing about estimating and approximating is that, by not constraining ourselves to a <i>perfect</i> answer, 
+                    we can run a wide range of experiments, analyze behavior, and determine whether our approach is good in the first place. 
+                    "Some approximation history and common applications"
+                </p> 
+
+                <p>
+                    A great way to put both <i>estimation</i> and <i>approximation</i> techniques to the test is to perform simulations. "A simulation is XYZ 
+                     and its relationship to approx and est is ABC". One of the most common approximation algorithm families, and the one w
+                     e will look at today, is the Monte Carlo simulation family. 
+                </p> 
+
+                <p>
+                    <i>Who does not know about pi?</i> This mathematical constant represents the ratio of a circle's circumference
+                    to its diameter. 
+                </p> 
+
+                <p>
+                    The way to compute this is actually straightforward. Given a square with a total area of 1 with its lower left 
+                    point placed at the origin. We then sample 2 random floating point numbers between (0,1), and assign these values to 
+                    variables <i>x</i> and <i>y</i> respectively. Then, by applying the distance formula with the corresponding <i>x</i>
+                    and <i>y</i> values, determine if the distance is less than or equal to 1. If so, keep track of the number of points 
+                    that satisfy this constraint. Also keep track of how many points have been sampled. The ratio of sampled points that 
+                    satisfy our distance constraint to total sampled points equals pi! Well, not exactly, since we only performed 
+                    this simulation in one quadrant, we need to multiply the numerator by 4. <i>Did the simulation and algorithm compute pi precisely?</i> 
+                    It depends on what definition of <i>precision</i> you use... it is important to remember that we are simulating, and 
+                    by performing more simulations, we would get a more accurate representation of the problem at hand.
+                </p> 
+
+                <p>
+                    Why don't we run a handful of these simulations varying in iterations? The following images depict how pi is 
+                    estimated using <i>n</i> equal to 10, 100, 1000, 10000, 100000. 
+
+                    <br><br>
+
+                    Notice that as we increase the number of iterations, we get a very beatiful geometric representation, and our 
+                    pi value is a lot more accurate!
+                </p> 
+
+                <p>
+                    <i>How beatiful is math?</i> For next time, I plan on doing Newton's method to approximate 
+                    the root of different equations varying in polynomial degrees!
                 </p> 
 
                 <p style="padding-top:20px"> 
