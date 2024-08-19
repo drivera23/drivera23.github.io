@@ -34,7 +34,7 @@
                 <a href="research.html">Research</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?view_op=list_works&hl=es&user=oqGrPB4AAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/drivera23/">Github</a> &nbsp/&nbsp
-                <a href="/documents/CV_Diego_Su24.pdf">CV</a> &nbsp
+                <a href="/documents/NEU_Su24_Diego.pdf">CV</a> &nbsp
                 <!-- /&nbsp -->
                 <!-- <a href="blog_landing.html">Blog</a> -->
               </p>
@@ -134,13 +134,26 @@
 
         <!-- footer -->
         <div class="container">
-          <p>
-            Last Updated: August 13, 2024</p>
+          <p id="LastU">
+            </p>
           <p></p>
           <p>
             <a href="https://jonbarron.info/">Source Code</a></p>
           <p></p>
         </div>
+
+        <script>
+          n =  new Date();
+          y = n.getFullYear();
+          m = n.getMonth();
+          d = n.getDate();
+          var months = [
+          'January', 'February', 'March', 'April', 'May',
+          'June', 'July', 'August', 'September',
+          'October', 'November', 'December'
+          ];
+          document.getElementById("LastU").innerHTML = "Last Updated: " + months[m] + " " + d + ", " + y;
+        </script>
 
 
       </td>
