@@ -1,97 +1,66 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Research</title>
-  
   <meta name="author" content="Diego Rivera Correa">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <center><h1>Research</h1></center>
-              <p>
-                My research experiences have been mostly centered around Visualization, Databases, HCI, and Statistical Methods. 
-                The projects here are organized in reverse chronological order. As of right now, my research is centered around
-                graph databases. More specifically, I am interested in understanding how non-trivial graph pattern queries are 
-                executed, and if current systems implement solutions that involve producing huge intermediate results, whereas 
-                the final output size is much smaller. I hope to keep working on them and be able to optimize for scalable solutions.
-              </p> 
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-         
-          <!-- GQL -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='diego_images/research/gql.png' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="">
-                <span class="papertitle"><strong> Graph Databases </strong></span>
-              </a>
-              <br>
-              
-              <strong>Diego Rivera Correa</strong>
-              <br>
-              <!-- <em>SIDIM XXXVIII</em>, 2023 -->
-              <br>
-              <!-- <a href="documents/Abstract_SIDIM (1).pdf">abstract</a> / 
-              <a href="diego_images/research/SIDIM2023.jpeg"> image </a> -->
-              <p></p>
-              <p> On its way! </p>
-            </td>
-          </tr>
-         
-          <!-- URPM CRYPT -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='diego_images/research/2D_Watermark.png' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="">
-                <span class="papertitle"><strong> Constructing 2D Watermarks by Composition</strong></span>
-              </a>
-              <br>
-              
-              <a href="https://sites.google.com/upr.edu/alcibiadesbustillozarate/inicio?authuser=0"> Alcibiades Bustillo </a>, <strong>Diego Rivera Correa</strong>
-              <br>
-              <em>SIDIM XXXVIII</em>, 2023
-              <br>
-              <a href="documents/Abstract_SIDIM (1).pdf">abstract</a> / 
-              <a href="diego_images/research/SIDIM2023.jpeg"> image </a> / 
-              <a href="diego_images/documents/posters/SIDIM_poster_DLRC.pdf">poster</a>
-              <p></p>
-              <p> This study presented a method of constructing 2D periodic arrays by composing a 1D periodic array. 
-                These arrays resulted in watermarks that were robust against many image-manipulating strategies.</p>
-            </td>
-          </tr>
-        </tbody></table>
-      <hr>
-      <div class="container">
-        <p id="LastU"> Last Updated: August 27, 2024
-          </p>
-        <p></p>
-        <p>
-          <!-- <a href="https://jonbarron.info/">Code Inspo</a></p> -->
-        <p></p>
-      </div>
-      </td>
-    </tr>
-  </table>
-</body>
+  <div class="page">
+    <div class="page-intro">
+      <h1>Research</h1>
+      <p>
+        My research experiences have been mostly centered around Visualization, Databases, HCI, and Statistical
+        Methods. As of right now, my research is centered around graph databases. More specifically, I am
+        interested in understanding how non-trivial graph pattern queries are executed, and if current systems
+        implement solutions that involve producing huge intermediate results, whereas the final output size is much
+        smaller. I hope to keep working on them and be able to optimize for scalable solutions.
+      </p>
+    </div>
 
+    <nav class="nav">
+      <a href="index.html">&larr; Home</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+
+    <h2>Graph Databases &amp; Query Processing</h2>
+    <div class="entry">
+      <div class="entry-img">
+        <img src="diego_images/research/gql.png" alt="Graph Databases">
+      </div>
+      <div class="entry-body">
+        <p>
+          Graph query languages let users express recursive, pattern-based traversals over data, but evaluating
+          them efficiently is hard: systems often build huge intermediate results along the way, even when the
+          final answer is small. My current work (ReCAP) explores compiling these path queries into relational
+          engines in a way that filters non-matching paths early, before they blow up into large intermediate
+          state, and studies how traversal strategy itself (informed vs. uninformed search) affects the cost of
+          answering these queries.
+        </p>
+        <p>See the <a href="publications.html">Publications</a> page for the papers coming out of this line of work.</p>
+      </div>
+    </div>
+
+    <h2>Earlier Work</h2>
+    <div class="entry">
+      <div class="entry-img">
+        <img src="diego_images/research/2D_Watermark.png" alt="2D Watermarking">
+      </div>
+      <div class="entry-body">
+        <p>
+          As an undergraduate at UPRM, I worked with Dr. Alcibiades Bustillo on constructing 2D digital watermarks
+          by composing 1D periodic arrays, producing watermarks that were robust against common image-manipulation
+          attacks.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Diego Rivera Correa</p>
+    </footer>
+  </div>
+</body>
 </html>
