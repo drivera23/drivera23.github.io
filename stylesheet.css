@@ -59,8 +59,11 @@ p {
 }
 
 .page-intro {
-  text-align: center;
   margin-bottom: 8px;
+}
+
+.page-intro h1 {
+  text-align: center;
 }
 
 .page-intro p {
